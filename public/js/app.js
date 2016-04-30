@@ -34,5 +34,9 @@ $stateProvider
   .state('hrportal', {
     url: "/hrportal",
     templateUrl: "./views/hrportal.html"
+  })
+  .state('messagethefounders', {
+    url: "/messagethefounders",
+    templateUrl: "./views/messagethefounders.html"
   });
 });
