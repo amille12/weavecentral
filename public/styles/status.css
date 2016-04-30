@@ -1,0 +1,42 @@
+.statusPage-widget {
+  display:block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /*-webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;*/
+  padding:20px 10px;
+  color:#fff;
+  margin-bottom:20px
+}
+
+.statusPage-widget.none, .statusPage-widget.operational {
+display: block;
+background-color:#14ad31;
+border:solid 1px #11932a;
+text-transform: uppercase;
+}
+.statusPage-widget.minor, .statusPage-widget.degraded_performance {
+background-color:#ffc82f;
+border:solid 1px #e9b72b
+}
+.statusPage-widget.major, .statusPage-widget.partial_outage {
+background-color:#fc8738;border:solid 1px #d77330
+}
+.statusPage-widget.critical,.statusPage-widget.major_outage {
+background-color:#bf0404;
+border:solid 1px #a40303
+}
+.statusPage-widget a {
+display:block;
+color:#fff;
+text-decoration:none
+}
+.status-description {
+float:left;width:65%
+}
+.status-page-name {
+  float:left;width:35%;
+  text-align:right;font-size:.8rem
+}

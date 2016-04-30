@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./styles/base.css">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type='text/javascript' src='//cdn.statuspage.io/se-v2.js'></script>
+    <script type='text/javascript' src='./js/status.js'></script>
+    <link rel="stylesheet" type="text/css" href="./styles/status.css">
+
+
   </head>
     <body>
 
@@ -15,6 +21,13 @@
         <div class="header">
           <h1>Central Dashboard</h1>
         </div>
+      </div>
+      <div class="statusPage-widget">
+        <a href="http://status.getweave.com/" target="_blank">
+          <h3>System Status: </h3>
+          <div class="status-description"></div>
+          <div class="clear"></div>
+        </a>
       </div>
 <div ui-view>
       <div class="moduleDisplay">
@@ -64,7 +77,6 @@
         </div>
 
       </div>
-
 
 
       <!-- <a ui-sref="admin">Admin</a>
