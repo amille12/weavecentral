@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="weaveCentral">
+  <head>
+    <meta charset="utf-8">
+    <title>Weave Central</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/base.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  </head>
+    <body>
+
+      <div class="headerWrapper">
+        <img id="logo" src="./img/logo.png" width="200px" height="70px"></img>
+        <div class="header">
+          <h1>Central Dashboard</h1>
+        </div>
+      </div>
+<div ui-view>
+      <div class="moduleDisplay">
+
+        <a ui-sref="directory"><div class="weaveDirectory">
+          <h2>Weave Employee Directory</h2>
+          <p>
+            Please click here to view employee contact information.
+          </p>
+        </div></a>
+
+        <a ui-sref="helpdesk"><div class="weaveHelpDesk">
+          <h2>Weave Help Desk</h2>
+          <p>
+            Need to submit an internal IT help ticket?  Click here!
+          </p>
+        </div></a>
+
+        <a ui-sref="hrportal"><div class="weaveHR">
+          <h2>Weave HR Portal</h2>
+          <p>
+            Need some company / HR info?  Check out the HR Portal!
+          </p>
+        </div></a>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- <a ui-sref="admin">Admin</a>
+      <a ui-sref="directory">Directory</a>
+      <a ui-sref="helpdesk">Weave Help Desk</a>
+      <a ui-sref="hrportal">Weave HR Portal</a>
+      <a ui-sref="supportportal">Weave Customer Support Portal</a>
+      <a ui-sref="weaveinsights">Weave Insights</a> -->
+
+
+
+
+
+
+
+  <!-- CDN Links -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+
+  <!-- Angular App -->
+  <script src="js/app.js"></script>
+
+
+  <!-- Controllers -->
+  <script src="js/controllers/controller.js"></script>
+
+  <!-- Services -->
+  <script src="js/services/service.js"></script>
+
+
+  <!-- Directives -->
+
+
+  </body>
+</html>
