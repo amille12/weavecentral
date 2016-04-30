@@ -40,6 +40,30 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+/*Help Desk Page*/
+
+.helpFormWrapper {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.helpFormWrapper button:hover {
+  background-color: black;
+  color: white;
+}
+
+/*Message The Founders Page*/
+
+.messageTheFoundersWrapper {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.messageTheFoundersWrapper button:hover {
+  background-color: black;
+  color: white;
+}
+
 /*ADMIN PAGE*/
 
 

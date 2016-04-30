@@ -1,1 +1,41 @@
-<h1>Help Desk Portal</h1>
+
+
+<div class="helpFormWrapper">
+  <h1>Help Desk Portal</h1>
+  <p>
+    Having computer problems, or is the printer ruining your day?  Submit an internal help desk ticket here!
+  </p>
+  <hr>
+
+   <form name="helpForm">
+     <div class="form-group">
+       <label for="name">Employee Name </label>
+       <input type="text" name="name" />
+     </div>
+
+     <div class="form-group">
+       <label for="email">Employee E-mail address</label>
+       <input type="email" name="email" />
+     </div>
+
+     <div class="form-group">
+       <label for="subjectList">What is the nature of your request?</label>
+       <select name="subjectList" class="form-control">
+         <option value="">----</option>
+         <option value="Workstation Problem">Workstation Problem</option>
+         <option value="Software Problem">Software Problem</option>
+         <option value="Network Problem">Network Problem</option>
+         <option value="Printer Problem">Printer Problem</option>
+         <option value="Accessory Problem">Accessory Problem</option>
+         <option value="Other">Other</option>
+       </select>
+     </div>
+
+     <div class="form-group">
+       <label for="comments">Description</label>
+       <textarea name="comments" class="form-control"></textarea>
+     </div>
+
+     <button class="btn btn-default">Submit</button>
+   </form>
+ </div>
