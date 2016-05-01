@@ -7,10 +7,10 @@ $urlRouterProvider.otherwise("/");
 //
 // Now set up the states
 $stateProvider
-  // .state('index', {
-  //   url: "/",
-  //   templateUrl: "index.html"
-  // })
+  .state('dashboard', {
+    url: "",
+    templateUrl: "./views/dashboard.html"
+  })
   .state('admin', {
     url: "/admin",
     templateUrl: "./views/admin.html"
