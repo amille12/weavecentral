@@ -21,7 +21,8 @@ $stateProvider
   })
   .state('helpdesk', {
     url: "/helpdesk",
-    templateUrl: "./views/helpdesk.html"
+    templateUrl: "./views/helpdesk.html",
+    controller: "helpDeskCtrl"
   })
   .state('supportportal', {
     url: "/supportportal",
