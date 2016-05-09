@@ -4,11 +4,12 @@
   "description": "Weave Central dashboard",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.15.1",
     "cors": "^2.7.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "mongodb": "^2.1.18",
-    "mongoose": "^4.4.14"
+    "mongoose": "^4.4.15"
   },
   "devDependencies": {},
   "scripts": {
