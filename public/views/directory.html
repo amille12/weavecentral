@@ -1,5 +1,7 @@
-<h1>Directory Center</h1>
+<h1>Directory Listing</h1>
+
 
 <div class="employees" ng-repeat="employee in employees">
-  Employee Name:  {{ employees.firstname }}
+  <p>Employee:  {{ employee.FirstName }} {{employee.LastName }} </p>
+  <p>Title: {{ employee.Title }} </p>
 </div>

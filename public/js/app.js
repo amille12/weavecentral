@@ -17,7 +17,8 @@ $stateProvider
   })
   .state('directory', {
     url: "/directory",
-    templateUrl: "./views/directory.html"
+    templateUrl: "./views/directory.html",
+    controller: "directoryCtrl"
   })
   .state('helpdesk', {
     url: "/helpdesk",

@@ -16,11 +16,17 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(cors());
 
+// Controllers
+var DirectoryController = require('./api/controllers/directory_controller');
+
+
 // //Endpoints
-//
-//
-//
-//
+app.get('/api/people', DirectoryController.findAll);
+app.get('/api/people/:id', DirectoryController.findOne);
+app.post('/api/people', DirectoryController.create);
+app.put('/api/people/:id', DirectoryController.update);
+app.delete('/api/people/:id', DirectoryController.destroy);
+
 // // // // MongoDB
 // var mongoUri = 'mongodb://localhost:27017/weaveConnect';
 // mongoose.connect(mongoUri);
