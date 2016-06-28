@@ -3,6 +3,7 @@ var session = require('express-session');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var mongojs = require('mongojs');
 
 
 // Node Server
@@ -27,20 +28,20 @@ app.post('/api/people', DirectoryController.create);
 app.put('/api/people/:id', DirectoryController.update);
 app.delete('/api/people/:id', DirectoryController.destroy);
 
-// // // // MongoDB
-// var mongoUri = 'mongodb://localhost:27017/weaveConnect';
-// mongoose.connect(mongoUri);
-//
-//
-//
-// // // Start Database
-// // var db = mongo('ecommerce', ['products']);
-//
-// var db = mongoose.connection;
-// db.on('error', console.error.bind(console, 'connection error: '));
-// db.once('open', function() {
-//     console.log('connected to db at ' + mongoUri)
-// });
+// // // MongoDB
+var mongoUri = 'mongodb://127.0.0.1:27017/weaveCentral';
+mongoose.connect(mongoUri);
+
+
+
+// // Start Database
+var db = mongojs('weaveCentral', ['people']);
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error: '));
+db.once('open', function() {
+    console.log('connected to db at ' + mongoUri)
+});
 
 
 // Start Server

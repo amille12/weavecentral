@@ -4,6 +4,7 @@
   "description": "Weave Central dashboard",
   "main": "server.js",
   "dependencies": {
+    "angular": "^1.5.7",
     "cors": "^2.7.1",
     "express": "^4.13.4",
     "express-session": "^1.13.0",
